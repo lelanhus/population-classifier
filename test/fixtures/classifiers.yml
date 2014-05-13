@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  x1: 1.5
+  x2: 1.5
+  x3: 1.5
+  x4: 1.5
+  x5: 1.5
+  x6: 1.5
+
+two:
+  x1: 1.5
+  x2: 1.5
+  x3: 1.5
+  x4: 1.5
+  x5: 1.5
+  x6: 1.5

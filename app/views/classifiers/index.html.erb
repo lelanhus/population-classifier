@@ -1,0 +1,35 @@
+<h1>Listing classifiers</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>X1</th>
+      <th>X2</th>
+      <th>X3</th>
+      <th>X4</th>
+      <th>X5</th>
+      <th>X6</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @classifiers.each do |classifier| %>
+      <tr>
+        <td><%= classifier.x1 %></td>
+        <td><%= classifier.x2 %></td>
+        <td><%= classifier.x3 %></td>
+        <td><%= classifier.x4 %></td>
+        <td><%= classifier.x5 %></td>
+        <td><%= classifier.x6 %></td>
+        <td><%= link_to 'Show', classifier %></td>
+        <td><%= link_to 'Edit', edit_classifier_path(classifier) %></td>
+        <td><%= link_to 'Destroy', classifier, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Classifier', new_classifier_path %>
